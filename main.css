@@ -1,0 +1,156 @@
+*{ 
+  margin:0;
+  padding:0;
+  font-family: "Saira", sans-serif;
+  text-decoration: None;
+  color: white;
+  scroll-behavior: smooth;
+}
+#navbar{
+ display:flex;
+ position: fixed ;
+ align-items: center;
+ justify-content: flex-end;
+ height: 10vh;
+ width: 100vw;
+ background-color: teal;
+ box-shadow: 0 3px 14px 3px rgba(0,0,0,1);
+ z-index: 5;
+}
+#navbar>div{
+  display: flex; 
+  justify-content:space-evenly;
+  width: 45vw;
+}
+#navbar>div>a{
+ position: relative;
+ color: white;
+ font-size: 4vmin;
+ font-weight:900;
+ transition: all 0.5s ease;
+}
+#link-page:hover{
+  bottom: 3px; 
+  box-shadow: 0 5px 0px 0px #005252,0 -5px 0px 0px #005252;
+}
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(0deg, black, #343639);
+}
+#welcome-section>h1{
+  font-size:8vmin;
+  font-weight: 900;
+}
+#welcome-section>h2{
+  color: teal;
+  font-size: 6vmin;
+}
+#projects{
+  display: flex;
+  justify-content:space-evenly;
+  align-content:flex-start;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 100;
+  padding: 20px;
+  background-color: #45567d;
+}
+#projects>div{
+  background-color: #02273e;
+  width: 42vw;
+  position: relative;
+  height: fit-content;
+  overflow: auto;
+  padding: 10px;
+  margin-top: 30px;
+  transition: all 1s ease-out;
+}
+#projects>div:hover{
+  background-color:teal;
+  bottom: 10px;
+  box-shadow: 10px 10px 10px 0 black;
+}
+#projects>div>img{
+  height: auto;
+  width: 100%;
+}
+#projects>div>h3{
+  text-align:center;
+}
+.project-title{
+  display: flex;
+  width: 100vw;
+  height: 10vw;
+  justify-content: center; 
+  align-items: center;
+  text-decoration: underline;
+  font-size: 6vmin;
+  overflow-wrap:break-word;
+  margin-top:7vh;
+  margin-bottom:5vh;
+}
+#footer{ 
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content:center;
+  text-align: center;
+}
+#footer>h1{
+  margin-top:20vh;
+  font-size: 3em;
+}
+#footer>h4{
+  margin-bottom: 20vh;
+}
+#footer>p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#separator{
+  width: 100%;
+  height: 8px;
+  background-color:  teal;
+}
+.social-tile{
+  display: flex;
+  text-align: center;
+  justify-content:center;
+}
+.social-tile>p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#footer>div>a>i{
+  display: flex; 
+  justify-content:center;
+  align-items: center;
+  margin-right:10px;
+}
+
+#footer>div>a:hover{
+  background-color: teal;
+}
+#footer>div>a>p{
+  display: flex; 
+  justify-content:center;
+  align-items: center;
+  margin-right:10px;
+  font-size:  1.2em;
+}
+@media (max-width: 600px){
+  #navbar{
+    background-color: #16474d;
+  } 
+#projects>div{
+  width: 80vw;
+  height: fit-content;
+  overflow: auto;
+}
+}
